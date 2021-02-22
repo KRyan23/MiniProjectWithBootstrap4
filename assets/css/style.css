@@ -64,11 +64,62 @@ header {
     margin: 0;
 }
 
+#nav {      /* This align the picture and the navigation section othe same height on the page */
+        margin: 0;
+}
+/* Css hack part 1 of 2, to close up the gap from an inline element */
 .menucontainer {
     font-size: 0;
 }
-
+/* Css hack part 2 of 2 to close up the gap from an inline element, returns the rest of the text to a standard size */
 #nav li {
     font-size: 14px;
     padding: 0;
+}
+
+
+.menuitem {
+    height: 120px;
+    text-align: center;
+    padding: 0;
+}
+
+.menuitem a {  /* target the a tag so the whole section is clickable */
+    height: 100%;
+    width: 240px; /* Changed from 120px */
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Targetting our FA icons */
+
+.menuitem a i {
+    color: fafafa;
+    font-size: 26px;
+    padding-top: 22px;
+    display: block;
+}
+
+/* Targetting our span text */
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+}
+
+/*--------------------------------- For Hover Effect ---------------------------*/
+
+.hvr-sweep-to-bottom:before { /* Targetting before here since if you use dev tools you will see the color class is set at before */ 
+            background: rgba(0, 0, 0, 0.2); /*Sets background to black and transparanency ot 0.2 to give grey effect*/
+            height: 120px;
+            padding-left: 0;
+            margin-left: 0;
+
 }
