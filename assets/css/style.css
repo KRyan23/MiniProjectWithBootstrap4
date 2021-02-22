@@ -123,3 +123,80 @@ header {
             margin-left: 0;
 
 }
+/*---------------------------------- Hover End -----------------------------*/
+
+
+/*---------- Special heading for padding - margins and text ----------------*/
+
+h1,h2,h3,h4,h5 {
+    margin: 0;
+
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+general-sub {
+    font-family: "Exo", san-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+/*--Some General styling rules--*/
+.inline-block {
+    display: inline-block; /*allows some spacing accross the footer */
+}
+
+/*---------- Special heading for padding - margins and text End----------------*/
+
+
+/*------------------------------------ Footer ---------------------------------*/
+footer {
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
+
+.cv-pdf i {         /*--Enlarge the text in the footer cv-pdf section--*/
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+    padding-left: 5px;
+    transition: 0.35s ease-in-out; /*-- you always want to put transistions in the parent element, this will be orange --*/
+    -moz-transition: 0.35s ease-in-out;
+    -webkit-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+}
+
+.cv-pdf i:hover {
+    color: #e84610;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+        width: 32px;
+        height: 32px;
+        padding: 12px 0;
+        border-radius: 50%;
+        font-size: 13px;
+        line-height: 7px;
+        text-align: center;
+        color: #fafafa;
+        background: #8f8f8f;
+        transition: 0.35s ease-in-out; /*-- you always want to put transistions in the parent element, this will be orange --*/
+    -moz-transition: 0.35s ease-in-out;
+    -webkit-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #e84610;
+}
+
+#footer-details {
+        padding: 20px;
+}
