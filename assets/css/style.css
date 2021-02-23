@@ -22,6 +22,9 @@
     background-color: #525252;
 }
 
+.bg-color-three-reasons {
+    background-color: #ffffff;
+}
 /*--------------------------------------------Heading-----------------------------------------*/
 
 header {
@@ -147,6 +150,23 @@ general-sub {
     display: inline-block; /*allows some spacing accross the footer */
 }
 
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px; /*Then just to give a little bit of space around the areas above and below the header, we'll add a top margin of 25px and a bottom margin of 40px.*/
+
+}
 /*---------- Special heading for padding - margins and text End----------------*/
 
 
