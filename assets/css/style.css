@@ -301,7 +301,7 @@ vertical-align: top;
     margin: 40px 20px;
 }
 
-/* ----------------------------------------Work History */
+/* ----------------------------------------Work History -----------------------------------------------*/
 
 .history-heading {
     color: #fafafa;
@@ -321,7 +321,7 @@ vertical-align: top;
 }
 
 .timeline-item:before {
-    content: attr(data-dates);
+    content: attr(data-dates); /* you can only set it before or afterwards */
     position: absolute;
     left: 2.5em;
     top: 3em;
@@ -333,7 +333,7 @@ vertical-align: top;
     margin: 0;
 }
 
-.timeline-item:after {
+.timeline-item:after { /* This creates a circle or white blob on the time line bar */
     width: 12px;
     height: 12px;
     display: block;
