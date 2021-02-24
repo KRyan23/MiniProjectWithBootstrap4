@@ -25,6 +25,10 @@
 .bg-color-three-reasons {
     background-color: #ffffff;
 }
+
+.bg-personal-info {
+    background-color: #f4f4f4;
+}
 /*--------------------------------------------Heading-----------------------------------------*/
 
 header {
@@ -230,4 +234,45 @@ footer {
 
 .three-reasons-heading {
     margin-bottom: 15px;
+}
+
+/*------------------------------- Personal Info ---------------------------------*/
+
+ /*---We want each personal info item to stand alone.
+In other words, we want it to take up the maximum horizontal space available and push its siblings down below it.
+So to do that, we're going to set the margin bottom to 20px, just to create a bit of vertical space between each item.
+We're also going to set the display to block, so it will start and end with a newline and occupy the entirety of the horizontal space.
+Then we're going to set the clear to both so that no other items can appear at either side of it in case, we were using floats. ---*/
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;
+}
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+
+
+.personal-info-item .key {
+width: 30%;
+margin-right: 21px;
+padding-top: 2px;
+vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    position: relative;
+    width: 60%;
 }
